@@ -1,8 +1,9 @@
 <template>
+<v-app>
   <v-card
     class="elevation-10
-    grey lighten-5"
-    max-width="400"
+    grey lighten-5 mx-auto mt-5"
+    width="400"
   >
     <v-card-title>
          <h1 class="display-1">Login</h1>
@@ -28,9 +29,10 @@
             <v-card-actions>
                 <v-btn rounded class="green lighten-1 white--text">Register</v-btn>
                 <v-spacer></v-spacer>
-                <v-btn rounded class="light-blue lighten-1 white--text">Login</v-btn>
+                <v-btn rounded class="light-blue lighten-1 white--text" to="/home">Login</v-btn>
             </v-card-actions>
         </v-card>
+        </v-app>
 </template>
 
 <script>

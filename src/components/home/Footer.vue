@@ -1,6 +1,5 @@
 <template>
   <v-footer
-      absolute
       color="#ECEFF1"
       class="font-weight-small pa-0"
     >

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-app-bar  color="#ECEFF1">
+    <v-app-bar color="#ECEFF1" app>
       <v-toolbar-title>
-          <v-btn to="/" text>
-          <v-icon>mdi-book-open</v-icon>
+          <v-btn to="/home" text>
+          <v-icon>mdi-book</v-icon>
           Awesome Shop
         </v-btn>
       </v-toolbar-title>
@@ -21,7 +21,7 @@
 
       <!-- desktop & tablet menu -->
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn to="/" text>
+        <v-btn to="/home" text>
           <v-icon>mdi-home</v-icon>
           Home
         </v-btn>
