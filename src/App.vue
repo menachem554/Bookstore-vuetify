@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <!-- <TopNav />
-    <Login /> -->
+    <TopNav />
+    <!-- <Login /> -->
     <v-main>
       <router-view></router-view>
     </v-main>
@@ -27,15 +27,15 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-// import TopNav from './components/TopNav.vue'
+import TopNav from './components/TopNav.vue'
 // import Login from './components/auth/Login.vue'
 
 export default {
   name: 'app',
-  // components: {
-  //   TopNav,
-  //   Login
-  // },
+  components: {
+    TopNav,
+    // Login
+  },
   computed: {
     ...mapState(['snackbar'])
   },

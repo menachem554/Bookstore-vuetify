@@ -1,17 +1,15 @@
 <template>
   <v-container class="fill-height mb-12">
     <v-row>
-      <v-col sm="10" offset-sm="1" md="8" offset-md="2">
-        <h2>Popular Products <v-btn to="store" text small color="primary">View All</v-btn></h2>
+      <v-col>
+        <h2>Popular Books <v-btn to="store" text small color="primary">View All</v-btn></h2>
       </v-col>
     </v-row>
     <v-row>
-      <v-col sm="10" offset-sm="1" lg="8" offset-lg="2">
+      <v-col >
         <v-row>
-          <v-col
-            sm="6"
-            md="3"
-            v-for="(product, i) in products.slice(0, 4)"
+          <v-col lg="3"
+            v-for="(product, i) in products.slice(0, 6)"
             :key="product.name"
           >
             <VerticalProduct :product="product" :i="i" :addToCart="addToCart" />

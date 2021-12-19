@@ -27,9 +27,9 @@
             </v-card-text>
             <v-divider></v-divider>
             <v-card-actions>
-                <v-btn rounded class="green lighten-1 white--text">Register</v-btn>
+                <v-btn rounded class="green lighten-1 white--text" to="sign-up">Register</v-btn>
                 <v-spacer></v-spacer>
-                <v-btn rounded class="light-blue lighten-1 white--text" to="/home">Login</v-btn>
+                <v-btn rounded class="light-blue lighten-1 white--text" to="home">Login</v-btn>
             </v-card-actions>
         </v-card>
         </v-app>

@@ -1,24 +1,30 @@
 <template>
-  <v-card outlined color="#FAFAFA">
-    <v-icon class="pa-9">mdi-file-image</v-icon>
+  <v-card
+    class="mx-auto"
+    max-width="344"
+  >
+    <v-img
+      :src="product.image"
+      height="200px"
+    />
 
-    <v-card-title class="pa-1 ">
-      {{ product.bookName }}
+    <v-card-title>
+       {{ product.bookName }}
     </v-card-title>
 
-    <v-card-text class="pa-1">
-    book id: {{ product.bookID }}
+    <v-card-text>
+     ID: {{ product.bookID }}
     </v-card-text>
 
-     <v-card-text class="pa-1">
-    category: {{ product.category }}
+     <v-card-text>
+      Category: {{ product.category }}
     </v-card-text>
 
-      <v-card-text class="pa-1">
-    author: {{ product.author }}
+     <v-card-text>
+      author: {{ product.author }}
     </v-card-text>
 
-    <v-card-actions class="pa-1">
+     <v-card-actions>
       <v-btn
         color="success"
         outlined
