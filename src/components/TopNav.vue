@@ -37,6 +37,19 @@
           <v-icon>mdi-view-dashboard-edit</v-icon>
           dashboard
         </v-btn>
+        <v-btn @click="toggleTheme" text rounded>
+         Toggle Theme
+        </v-btn>
        </v-toolbar>
       </div>
 </template>
+<script>
+export default {
+   methods: {
+    toggleTheme() {
+      this.$vuetify.theme.themes.dark.anchor = '#41B883'
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+    }
+  }
+}
+</script>
